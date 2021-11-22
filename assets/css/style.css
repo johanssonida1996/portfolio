@@ -2293,3 +2293,14 @@ hr.style-six {
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     margin-top: -1;
 }
+
+.tec-skill{
+    display: flex;
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+
+.tec-skills{
+    width: 100%;
+    padding-top: 0px;
+}
