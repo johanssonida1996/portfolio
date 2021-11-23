@@ -2075,6 +2075,21 @@ body.admin-bar .fixed-top {
     .widget .search-form button {
         display: none;
     }
+
+    .outer-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .tec-skill{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+      .tec-skill a{
+          font-size: 18px;
+  
+      }
 }
 
 @media (max-width: 768px) {
@@ -2160,6 +2175,20 @@ body.admin-bar .fixed-top {
         flex: 0 0 60%;
         max-width: 60%;
     }
+    .outer-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .tec-skill{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+      .tec-skill a{
+          font-size: 18px;
+  
+      }
 
 
 }
@@ -2237,6 +2266,21 @@ body.admin-bar .fixed-top {
         display: none;
     }
 
+    .outer-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+  
+    .tec-skill{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+      .tec-skill a{
+          font-size: 15px;
+  
+      }
+
 }
 
 
@@ -2274,6 +2318,21 @@ body.admin-bar .fixed-top {
         font-size: 45px;
     }
 
+  .outer-div{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .tec-skill{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+    .tec-skill a{
+        font-size: 15px;
+
+    }
+
 }
 
 .showoff{
@@ -2303,4 +2362,10 @@ hr.style-six {
 .tec-skills{
     width: 100%;
     padding-top: 0px;
+}
+
+#mepic{
+    height: auto;
+    max-width: 100%;
+    padding-right: 50px;
 }
