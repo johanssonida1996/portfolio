@@ -21,17 +21,6 @@
 
 
     </head>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DC41T8ZWSS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DC41T8ZWSS');
-</script>
-
     <body>
         <div id="preloader" style="display: none;">
            <div class="spinner">
@@ -42,8 +31,8 @@
            </div>
         </div>
 
-        <section class="wrapper">
-         <!-- <div id="stars"></div> -->
+        <!-- <section class="wrapper">
+         <div id="stars"></div> -->
       
         <header>
            <nav class="navbar navbar-expand-lg">
@@ -200,12 +189,12 @@
                  <div class="col-lg-7 my-auto wow fadeInRight" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
                     <h3><strong>Hi There</strong></h3>
                     <div class="about-me-description">
-                       <p>My name is Ida and I am currently studying the vocational program .NET Web Developer at EC Utbildning. I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try editing a webpage for my dad — turned out to be not as easy as i thought. 
+                       <p>My name is Ida and I am a (soon to be) Web Developer from Sweden. I enjoy creating things that live on the internet. My interest in web development started back in 2019 when I decided to try editing a webpage for my dad — turned out to be not as easy as i thought. 
 
                        <p>Fast-forward to today, I'v currently studying the vocational program .NET Web Developer at EC Utbildning, so during office hours I am either studying or honing my skills through a personal project.   My main focus these days is building accessible, webaplications from scratch.</p> 
                         
                         </p>
-                       <p>Otherwise, in my free time I like to play padel and hiking. I also meditate and exercising yoga to stay calm.</p>
+                       <p>Otherwise, in my free time I like to play padel and hiking. I also meditate and exercising yoga to stay calm, avoid stress and be able to focus</p>
                        <p><em>"Meditation is like a gym in which you develop the powerful mental muscles of calm and insight." - Ajahn Brahm</em></p>
                     </div>
                     <div class="row">
@@ -230,7 +219,8 @@
                        <div class="col-lg-6">
                           <div class="contact-info">
                              <strong><span>LinkedIn:</span></strong>
-                             <p>ida-johansson-a1305b16a</p>
+                             <br>
+                             <a href="https://www.linkedin.com/in/ida-johansson-a1305b16a/"> Ida Johansson</a>
                           </div>
                        </div>
                     </div>
@@ -720,19 +710,21 @@
                     </div>
                  </div>
                  <div class="col-lg-12">
-                    <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.4s" novalidate="novalidate" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <form id="contact-form" class="wow fadeInUp" data-wow-delay="0.4s"  style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
                        <div class="contactform">
                           <div class="row">
                              <div class="col-lg-6">
-                                <input type="text" name="your-name" aria-required="true" aria-invalid="false" placeholder="Your Name">
+                                <input type="text" id="name" name="your-name"  placeholder="Your Name" required />
                              </div>
                              <div class="col-lg-6">
-                                <input type="email" name="email" aria-required="true" placeholder="Your Email">
+                                <input type="email" id="email" name="email" aria-required="true" placeholder="Your Email" required  />
                              </div>
                              <div class="col-lg-12">
-                                <input type="text" name="subject" aria-required="true" placeholder="Your Subject">
-                                <textarea name="textarea" aria-required="true" placeholder="Your Message"></textarea>
-                                <input type="submit" value="Send Message" class="wpcf7-form-control wpcf7-submit">
+                                <input type="text" id="subject" name="subject" aria-required="true" placeholder="Your Subject" required />
+                                <textarea id="message" name="textarea" aria-required="true" placeholder="Your Message" required></textarea>
+                                <input type="submit" value="Send Message" >
+<!-- 
+                                value="Send Message" class="wpcf7-form-control wpcf7-submit" action="#" method="post" -->
                              </div>
                           </div>
                        </div>
@@ -769,8 +761,10 @@
         </footer>
 
         <div id="backtotop" style="display: none;"><i class="fa fa-arrow-circle-up"></i></div>
-    </section>
+    <!-- </section> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/form.js"></script>
      </body>
      
