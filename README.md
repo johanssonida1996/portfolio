@@ -8,10 +8,6 @@
 
 A relatively simple portfolio website built with html, css and javascript.
 
-## 🔴 Attribution
-
-
-## 📦 Extra Packages
 
 ## 🔜 Future iterations
 
