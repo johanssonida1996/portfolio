@@ -1,0 +1,37 @@
+import swal from 'sweetalert';
+
+const name = document.getElementById('name');
+const name2 = document.getElementById('name');
+const email = document.getElementById('email');
+const subject = document.getElementById('subject');
+const message = document.getElementById('message');
+const submit = document.getElementsByClassName('form-contact')[0];
+
+submit.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // write html for proper format to be sent in mail
+    let ebody = `
+    <b>Namn: </b>${name2.value}
+    <br>
+    <b>Email: </b>${email.value}
+    <br>
+    <b>Ämne: </b>${subject.value}
+    <br>
+    <b>Meddelande: </br>${message.value}
+    <br>
+    <br>
+    <br>
+    `
+    // Email Code
+    Email.send({
+        SecureToken : "02c3f2c6-b854-41a4-897b-660f5fd9ff72",
+        To : 'ida.johansson@ijohansson.com',
+        From : email.value,
+        Subject : "Nytt meddelande från " + email.value,
+        Body : ebody
+    }).then(
+      message => alert(message)
+    );
+
+});
