@@ -1,4 +1,3 @@
-
 const name = document.getElementById('name');
 const name2 = document.getElementById('name');
 const email = document.getElementById('email');
@@ -26,7 +25,7 @@ submit.addEventListener('submit', (e) => {
     Email.send({
         SecureToken : "02c3f2c6-b854-41a4-897b-660f5fd9ff72",
         To : 'ida.johansson@ijohansson.com',
-        From : email.value,
+        From : 'ida.johansson@ijohansson.com',
         Subject : "Nytt meddelande från " + email.value,
         Body : ebody
     }).then(
