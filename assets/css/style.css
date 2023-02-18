@@ -16,11 +16,6 @@ body {
   background: transparent;
 }
 
-
-alert{
-  background-color: #15bb62;
-}
-
 body::before {
   content: "";
   position: fixed;

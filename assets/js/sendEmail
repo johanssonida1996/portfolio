@@ -1,4 +1,3 @@
-import swal from 'sweetalert';
 
 const name = document.getElementById('name');
 const name2 = document.getElementById('name');
