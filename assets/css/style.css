@@ -1199,3 +1199,7 @@ section .container {
   color: #fff;
 }
 
+
+.credits a:hover {
+  color: #fff;
+}
