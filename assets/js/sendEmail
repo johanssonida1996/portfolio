@@ -32,4 +32,6 @@ submit.addEventListener('submit', (e) => {
       message => alert(message)
     );
 
+    submit.reset();
+
 });
